@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="442dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Registration"
+        android:textColor="#FFFFFF"
+        android:textSize="45dp" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText03"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText02"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText01"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button1"
+        android:background="@color/red"
+        android:text="Go Back" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/red"
+        android:onClick="@drawable/darkbuttonpressed"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/namelabel"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Phone No."
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+</ScrollView>

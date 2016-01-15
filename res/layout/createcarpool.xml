@@ -1,0 +1,147 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+<RelativeLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/EditText05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditText04"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Available Seats"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditText02"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditText01"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Departure Time"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/EditText04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditText03"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Departure Date"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/EditText06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EditText05"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText06" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radio1"
+            android:layout_alignBottom="@+id/radio1"
+            android:layout_alignLeft="@+id/EditText05"
+            android:layout_marginLeft="37dp"
+            android:checked="true"
+            android:text="Taxi" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioGroup1"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/radio0"
+            android:text="Personal Car" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="14dp"
+        android:background="@color/red"
+        android:text="Post" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText01"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/EditText01"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Start Point"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp"
+     >
+ 
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+     <TextView
+         android:id="@+id/name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/commentlabel"
+         android:layout_toRightOf="@+id/namelabel"
+         android:textSize="@dimen/rating"
+         android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/commentlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namelabel"
+        android:text="Comment : "
+        android:textColor="@color/black" />
+ 
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/commentlabel"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/commentlabel"
+        android:textColor="@color/black" />
+ 
+    
+</RelativeLayout>

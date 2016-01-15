@@ -1,0 +1,62 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<EditText
+	    android:id="@+id/editText1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_alignBottom="@+id/editText2"
+	    android:layout_marginBottom="52dp"
+	    android:background="@drawable/textfield"
+	    android:ems="10"
+	    android:hint="Enter your username"
+	    android:textColor="#111111" />
+
+	<EditText
+	    android:id="@+id/editText2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/namelabel"
+	    android:layout_marginTop="108dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/textfield"
+	    android:ems="10"
+	    android:hint="Enter your password"
+	    android:inputType="textPassword"
+	    android:textColor="#111111" />
+
+	<TextView
+	    android:id="@+id/namelabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="41dp"
+	    android:text="Login"
+	    android:textColor="#FFFFFF"
+	    android:textSize="45dp" />
+
+	<Button
+	    android:id="@+id/userloginbutton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/editText2"
+	    android:layout_alignRight="@+id/editText2"
+	    android:layout_below="@+id/editText1"
+	    android:layout_marginTop="52dp"
+	    android:background="@color/red"
+	    android:text="Login" />
+	
+</RelativeLayout>
+</ScrollView>

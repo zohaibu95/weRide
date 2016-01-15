@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="402dp" >
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText4"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Confirm New Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Change Password"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText3"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText01"
+        android:layout_alignRight="@+id/EditText01"
+        android:layout_below="@+id/EditText01"
+        android:layout_marginTop="25dp"
+        android:background="@color/red"
+        android:onClick="@drawable/darkbuttonpressed"
+        android:text="Change Password" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_below="@+id/namelabel"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/textfield"
+        android:ems="10"
+        android:hint="Old password"
+        android:inputType="textPassword"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+</ScrollView>

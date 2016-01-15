@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp"
+     >
+ 
+    <TextView
+        android:id="@+id/ranklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departure Time : "
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+     <TextView
+         android:id="@+id/rank"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/countrylabel"
+         android:layout_toRightOf="@+id/ranklabel"
+         android:textSize="@dimen/rating"
+         android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/countrylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ranklabel"
+        android:text="Start Point : "
+        android:textColor="@color/black" />
+ 
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/countrylabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rank"
+        android:layout_toRightOf="@+id/countrylabel"
+        android:textColor="@color/black" />
+ 
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countrylabel"
+        android:text="Destination\ : "
+        android:textColor="@color/black" />
+ 
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/populationlabel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/country"
+        android:layout_toRightOf="@+id/populationlabel"
+        android:textColor="@color/black" />
+    
+</RelativeLayout>

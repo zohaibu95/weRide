@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phonelabel"
+        android:layout_alignTop="@+id/citylabel"
+        android:layout_toRightOf="@+id/citylabel"
+        android:textSize="20dp" />
+ 
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phonelabel"
+        android:layout_alignTop="@+id/phonelabel"
+        android:layout_toRightOf="@+id/phonelabel"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/requestcarpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="50dp"
+        android:background="@color/red"
+        android:text="Accept Request" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/namelabel"
+        android:layout_alignTop="@+id/namelabel"
+        android:layout_toRightOf="@+id/namelabel"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/requestcarpool"
+        android:layout_alignRight="@+id/requestcarpool"
+        android:layout_below="@+id/requestcarpool"
+        android:layout_marginTop="40dp"
+        android:background="@color/red"
+        android:text="Reject Request" />
+
+    <TextView
+        android:id="@+id/phonelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/citylabel"
+        android:layout_below="@+id/citylabel"
+        android:layout_marginTop="16dp"
+        android:text="Phone # : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/citylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namelabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        android:text="City : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/namelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/city"
+        android:layout_alignLeft="@+id/requestcarpool"
+        android:layout_marginBottom="14dp"
+        android:text="Name :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+ 
+</RelativeLayout>

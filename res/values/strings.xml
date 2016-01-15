@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">weRide</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Fragment1">Home Contains Request Feeds</string>
+    <string name="FragmentTab1">Some action</string>
+    <string name="FragmentTab2">Some Action</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="Fragment3">Here is the list of all subscribed posts</string>
+    <string name="Fragment4">About Developers</string>
+    <string name="Fragment5">Contains Logout Option Button</string>
+    <string name="Fragment6">Contains basic app preferences</string>
+    <string name="ranklabel">"Destination Place: "</string>
+    <string name="countrylabel">"City : "</string>
+    <string name="populationlabel">"Country : "</string>
+ 
+    
+    
+
+</resources>

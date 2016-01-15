@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/countrylabel"
+        android:layout_alignTop="@+id/ranklabel"
+        android:layout_toRightOf="@+id/ranklabel"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+ 
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/populationlabel"
+        android:layout_alignTop="@+id/countrylabel"
+        android:layout_toRightOf="@+id/countrylabel"
+        android:textSize="20dp" />
+ 
+    <TextView
+        android:id="@+id/population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/posternamelabel"
+        android:layout_alignTop="@+id/populationlabel"
+        android:layout_toRightOf="@+id/populationlabel"
+        android:textSize="20dp" />
+
+    <!-- 
+ 
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:padding="1dp" /> -->
+
+    <TextView
+        android:id="@+id/postername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/posterphonelabel"
+        android:layout_alignTop="@+id/posternamelabel"
+        android:layout_toRightOf="@+id/posternamelabel"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/subscribepostcommentbutton"
+        android:layout_marginTop="16dp"
+        android:background="@color/red"
+        android:onClick="@drawable/darkbuttonpressed"
+        android:text="Leave Carpool" />
+
+    <TextView
+        android:id="@+id/ranklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subscribepostcommentbutton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp"
+        android:text="Departure Time : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/subscribepostcommentbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="89dp"
+        android:background="@color/red"
+        android:onClick="@drawable/darkbuttonpressed"
+        android:text="View Comments" />
+
+    <TextView
+        android:id="@+id/posterphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/descriptionlabel"
+        android:layout_alignTop="@+id/posterphonelabel"
+        android:layout_toRightOf="@+id/posterphonelabel"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/descriptionlabel"
+        android:layout_alignTop="@+id/descriptionlabel"
+        android:layout_toRightOf="@+id/descriptionlabel"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/descriptionlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/posterphonelabel"
+        android:layout_below="@+id/posterphonelabel"
+        android:layout_marginTop="15dp"
+        android:text="Description : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/posterphonelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/populationlabel"
+        android:layout_below="@+id/posternamelabel"
+        android:layout_marginTop="17dp"
+        android:text="Poster Phone # : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/countrylabel"
+        android:layout_below="@+id/countrylabel"
+        android:layout_marginTop="14dp"
+        android:text="Destination : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/countrylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ranklabel"
+        android:layout_below="@+id/ranklabel"
+        android:layout_marginTop="17dp"
+        android:text="Start Point : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/posternamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/populationlabel"
+        android:layout_below="@+id/populationlabel"
+        android:layout_marginTop="16dp"
+        android:text="Poster Name : "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+ 
+</RelativeLayout>

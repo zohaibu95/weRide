@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/memberphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/memberphonelabel"
+        android:layout_alignTop="@+id/memberphonelabel"
+        android:layout_toRightOf="@+id/memberphonelabel"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/removemembercarpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/memberphone"
+        android:layout_marginTop="50dp"
+        android:background="@color/red"
+        android:text="Remove member" />
+
+    <TextView
+        android:id="@+id/membername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/membernamelabel"
+        android:layout_alignTop="@+id/membernamelabel"
+        android:layout_toRightOf="@+id/membernamelabel"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/membernamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/removemembercarpool"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:text="Name :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/memberphonelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/membernamelabel"
+        android:layout_below="@+id/membername"
+        android:layout_marginTop="20dp"
+        android:text="Phone # : "
+        android:textSize="20dp" />
+ 
+</RelativeLayout>
